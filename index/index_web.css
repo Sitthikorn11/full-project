@@ -1,0 +1,126 @@
+body {
+  background-color: #f8f9fa;
+  font-family: 'Arial', sans-serif;
+}
+
+.hero {
+  background: linear-gradient(135deg, #28a745, #218838);
+  color: white;
+  padding: 100px 20px;
+}
+
+#hero {
+  position: relative;
+  height: 45vh;
+  overflow: hidden;
+}
+
+.hero-slide {
+  height: 45vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.carousel-caption h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #ddd;
+}
+
+.price-ticker {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  background-color: #f8f9fa;
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.price-ticker h4 {
+  font-size: 1.25rem;
+  margin: 0;
+  text-align: center;
+}
+
+.ticker-container {
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+}
+
+.price-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  animation: slideUp 40s linear infinite;
+}
+
+.price-list li {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.btn-login {
+  background: linear-gradient(45deg, #28a745, #218838);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 50px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-login:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  background: #212529;
+  color: #adb5bd;
+}
+
+footer p {
+  margin: 0;
+}

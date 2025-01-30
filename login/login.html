@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/login/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="login-box">
+        <div class="login-header">
+            <h1>Login</h1>
+        </div>
+
+        <form id="loginForm" action="/login/login.html" method="POST">
+            <div class="input-box">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" class="input-field" placeholder="Username" autocomplete="off" required>
+            </div>
+
+            <div class="input-box">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" class="input-field" placeholder="Password" autocomplete="off" required>
+            </div>
+
+            <!-- <div class="forgot">
+                <section>
+                    <input type="checkbox" id="check">
+                    <label for="check">Remember Me</label>
+                </section>
+                <section>
+                    <a href="/Forgot.html">Forgot Password</a>
+                </section>
+            </div> -->
+
+            <div class="input-submit">
+                <button type="submit" class="submit-btn" id="signInButton">Sign In</button>
+            </div>
+
+            <div class="sign-up-link">
+                <p>Don't have an account? <a href="/Register.html">Sign Up</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("signInButton").addEventListener("click", function(event) {
+            event.preventDefault();  // ป้องกันไม่ให้ฟอร์มถูกส่ง
+            window.location.href = "/index/index_web.html";  // ไปที่หน้า index
+        });
+    </script>
+</body>
+</html>
